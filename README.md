@@ -15,7 +15,7 @@ Unlike standard "black box" AI, this project is validated against the **Generali
 | **RMSE (Accuracy)** | **15.06 cycles** | 35.61 cycles | **+57%** |
 | **NASA Score (Safety)** | **460.77** | 1,200+ | **Top Tier** |
 
-> *Note: The "NASA Score" is an asymmetric function ($S = \sum (e^{d/13}-1)$ for early, $e^{d/10}-1$ for late). It penalizes late predictions exponentially to prioritize flight safety. A score of <500 places this model in the top percentile of the original PHM08 Data Challenge.*
+> *Note: The "NASA Score" is an asymmetric function > $$S = \sum_{i=1}^{n} s_i, \text{ where } s_i = \begin{cases} e^{-\frac{d}{13}} - 1 & \text{for } d < 0 \text{ (Early)} \\ e^{\frac{d}{10}} - 1 & \text{for } d \ge 0 \text{ (Late)} \end{cases}$$. It penalizes late predictions exponentially to prioritize flight safety. A score of <500 places this model in the top percentile of the original PHM08 Data Challenge.*
 
 ## ⚛️ The Physics Behind The Model
 The AI does not just predict random numbers; it learns to inverse-map the **Generalized Wear Equation** defined in the C-MAPSS thermo-dynamical simulation:
