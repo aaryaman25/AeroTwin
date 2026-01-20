@@ -1,6 +1,6 @@
 # ✈️ AeroTwin: Physics-Informed Digital Twin for Predictive Maintenance
 
-**A Real-Time IoT Digital Twin that predicts jet engine failure with SOTA accuracy (RMSE 15.06), benchmarked against NASA's C-MAPSS Physics Models.**
+**A Real-Time IoT Digital Twin that predicts jet engine failure with competitive accuracy (RMSE 15.06), benchmarked against NASA's C-MAPSS Physics Models.**
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue) ![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-red) ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-orange) ![NASA](https://img.shields.io/badge/Physics-Wear%20Eq-black)
 
